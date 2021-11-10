@@ -1,3 +1,4 @@
+#Route Table 설정
 resource "aws_route_table" "zzaeha_rt" {
   vpc_id = aws_vpc.zzaeha_vpc.id
 
