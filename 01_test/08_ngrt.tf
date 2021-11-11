@@ -1,3 +1,4 @@
+#NAT Gateway Route Table 생성
 resource "aws_route_table" "zzaeha_ngrt"{
   vpc_id = aws_vpc.zzaeha_vpc.id
 
