@@ -4,6 +4,7 @@ resource "aws_security_group" "zzaeha_sg"{
   description = "Allow HTTP,SSH,SQL,ICMP"
   vpc_id = aws_vpc.zzaeha_vpc.id
 
+  #inbound 규칙
   ingress = [
     {
       description = "Allow HTTP"
@@ -50,6 +51,7 @@ resource "aws_security_group" "zzaeha_sg"{
       self = null
     }
   ]
+  #outbound 규칙
   egress = [
     {
       description = "ALL"
