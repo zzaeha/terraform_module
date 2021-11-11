@@ -5,5 +5,4 @@ resource "aws_internet_gateway" "zzaeha_ig" {
   tags = {
     "Name" = "zzaeha-ig"
   }
-  
-}
+} 
