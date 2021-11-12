@@ -13,6 +13,7 @@ resource "aws_lb_target_group" "zzaeha_albtg" {
     matcher = "200"
     path = "/index.html"
     port = "traffic-port"
+    protocol = "HTTP"
     timeout = 2
     unhealthy_threshold = 2
   }
