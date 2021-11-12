@@ -1,3 +1,4 @@
+#Auto Scaling Group 생성
 resource "aws_autoscaling_group" "zzaeha_asg" {
   name = "zzaeha-asg"
   min_size = 2
