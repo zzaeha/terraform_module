@@ -3,7 +3,7 @@ resource "aws_lb_target_group" "zzaeha_albtg" {
   name = "zzaeha-albtg"
   port = 80
   protocol = "HTTP"
-  target_type = "instance"
+//target_type = "instance"
   vpc_id = aws_vpc.zzaeha_vpc.id
 
   health_check {
