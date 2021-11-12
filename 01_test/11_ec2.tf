@@ -44,3 +44,7 @@ resource "aws_eip" "zzaeha_web_a_ip" {
     aws_internet_gateway.zzaeha_ig
   ]
 }
+
+output "public_ip" {
+  value = aws_instance.zzaeha_web_a.public_ip
+}
