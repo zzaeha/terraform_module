@@ -5,11 +5,12 @@ resource "aws_launch_configuration" "zzaeha_aslc" {
   instance_type = "t2.micro"
   iam_instance_profile = "admin_role"
   security_groups = [aws_security_group.zzaeha_sg.id]
-  key_name = "zzaeha2-key"
+  key_name = "zzaeha-key"
 
   #user_data = file("./install.sh")
-
+/*
   lifecycle {
     create_before_destroy = true
   }
+  */
 }
