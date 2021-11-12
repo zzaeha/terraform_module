@@ -27,14 +27,9 @@ resource "aws_instance" "zzaeha_web_a"{
   private_ip = "10.0.0.11"
   subnet_id = aws_subnet.zzaeha_pub_a.id
   vpc_security_group_ids = [aws_security_group.zzaeha_sg.id]
-  user_data = <<-EOF
-                #!/bin/bash
-                sudo su -
-                yum install -y httpd
-                echo "ZZAEHA-Terraform-1" >> /var/www/html/index.html
-                systemctl start httpd
-                EOF
+  user_data = file("./install.sh")
 }
+
 #eip
 resource "aws_eip" "zzaeha_web_a_ip" {
   vpc = true
