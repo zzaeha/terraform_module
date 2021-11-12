@@ -1,7 +1,7 @@
 #ALB Listener 생성
 resource "aws_lb_listener" "zzaeha_albli" {
   load_balancer_arn = aws_lb.zzaeha_alb.arn
-  port = 80
+  port = "80"
   protocol = "HTTP"
 
 default_action {
