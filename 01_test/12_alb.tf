@@ -10,3 +10,7 @@ resource "aws_lb" "zzaeha_alb" {
     "Name" = "zzaeha-alb"
   }
 }
+
+output "alb_dns" {
+  value = aws_lb.zzaeha_alb.dns_name
+}
