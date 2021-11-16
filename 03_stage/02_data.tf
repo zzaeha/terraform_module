@@ -2,7 +2,7 @@ module "test" {
     source  =  "../01_test"
 
     name                 = "zzaeha"
-    region               = "ap-northeast-1"
+    region               = "ap-northeast-2"
     avazone              = ["a","c"]
     key                  = "zzaeha-key"
     cidr                 = "0.0.0.0/0"
