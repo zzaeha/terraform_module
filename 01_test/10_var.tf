@@ -1,31 +1,31 @@
 variable "name" {
   type = string
-   default = "zzaeha"
+  # default = "zzaeha"
 }
 
 variable "region" {
   type = string
-   default = "ap-northeast-2"
+  # default = "ap-northeast-2"
 }
 
 variable "ava" {
   type = list(string)
-    default = ["a", "c"]
+  #  default = ["a", "c"]
 }
 
 variable "key" {
   type = string
-    default = "zzaeha-key"
+  #  default = "zzaeha-key"
 }
 
 variable "cidr_main" {
   type = string
-   default = "10.0.0.0/16"
+  # default = "10.0.0.0/16"
 }
 
 variable "cidr" {
   type = string
-    default = "0.0.0.0/0"
+  #  default = "0.0.0.0/0"
 }
 
 variable "cidr_v6" {
